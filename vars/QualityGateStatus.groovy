@@ -2,8 +2,8 @@
 def call(credentialsId) {
     def qgStatus = 'UNKNOWN'
     
-    // Set a timeout of 3 minutes (or whatever is appropriate)
-    timeout(time: 3, unit: 'MINUTES') { 
+    // Set a timeout of 1 minutes (or whatever is appropriate)
+    timeout(time: 1, unit: 'MINUTES') { 
         try {
             // Wait for the quality gate status
             qgStatus = waitForQualityGate()
